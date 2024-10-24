@@ -4,39 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Music Portfolio</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-5">
         <h1>My Music Portfolio</h1>
-        <p>Discover my latest musical creations</p>
+        <p class="lead">Discover my latest musical creations</p>
+        <a href="https://www.fiverr.com/your_fiverr_profile" class="btn btn-primary" target="_blank">Selengkapnya</a>
     </header>
 
-    <section>
-        <h2>Featured Tracks</h2>
-        <div class="track">
-            <h3>Track 1: Melody of Dreams</h3>
-            <audio controls loop>
-                <source src="music/melody_of_dreams.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Featured Tracks</h2>
+        <div class="row">
+            <!-- Loop through 15 tracks using Bootstrap cards -->
+            <div class="col-md-4 mb-4" id="track1">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Track 1: Melody of Dreams</h5>
+                        <audio controls loop class="w-100">
+                            <source src="music/melody_of_dreams.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" id="track2">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Track 2: Rhythm of the Night</h5>
+                        <audio controls loop class="w-100">
+                            <source src="music/rhythm_of_the_night.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for tracks 3 to 14 -->
+
+            <div class="col-md-4 mb-4" id="track15">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Track 15: Symphony of Stars</h5>
+                        <audio controls loop class="w-100">
+                            <source src="music/symphony_of_stars.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="track">
-            <h3>Track 2: Rhythm of the Night</h3>
-            <audio controls loop>
-                <source src="music/rhythm_of_the_night.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
+        <!-- Link Fiverr hanya di bawah track terakhir -->
+        <div class="text-center mt-4">
+            <a href="https://www.fiverr.com/your_fiverr_profile" class="btn btn-primary" target="_blank">Selengkapnya</a>
         </div>
-    </section>
+    </div>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 My Music Portfolio | Designed by Me</p>
     </footer>
 
-    <!-- Link to the JavaScript file -->
-    <script src="script.js"></script>
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
