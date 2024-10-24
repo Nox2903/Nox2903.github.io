@@ -4,39 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            color: #333;
         }
         header {
-            text-align: center;
-            padding: 50px 0;
-            background-color: #333;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
             color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
         }
         section {
-            margin: 20px 0;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
         }
         .track {
             background-color: white;
+            border-radius: 10px;
             padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .track:hover {
+            transform: translateY(-5px);
+        }
+        .track h3 {
+            font-size: 1.5em;
             margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #444;
+        }
+        .track audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>My Music Portfolio</h1>
-        <p>Welcome to my collection of musical works</p>
+        <p>Discover my latest musical creations</p>
     </header>
 
     <section>
         <h2>Featured Tracks</h2>
+
         <div class="track">
             <h3>Track 1: Melody of Dreams</h3>
             <audio controls>
@@ -44,6 +87,7 @@
                 Your browser does not support the audio element.
             </audio>
         </div>
+
         <div class="track">
             <h3>Track 2: Rhythm of the Night</h3>
             <audio controls>
@@ -51,6 +95,11 @@
                 Your browser does not support the audio element.
             </audio>
         </div>
+
     </section>
+
+    <footer>
+        <p>&copy; 2024 My Music Portfolio | Designed by Me</p>
+    </footer>
 </body>
 </html>
